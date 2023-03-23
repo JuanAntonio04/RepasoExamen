@@ -10,17 +10,17 @@ public class Deposito {
 	
 	/**
 	 * Atributo diametro del deposito
-	 */
+	 **/
     private float diametro;
     
     /**
 	 * Atributo altura del deposito
-	 */
+	 **/
     private float altura;
     
     /**
 	 * Atributo idDeposito del deposito
-	 */
+	 **/
     private String idDeposito;
     
    /**
@@ -31,7 +31,12 @@ public class Deposito {
     } 
     
     /**
-     * Constructor de la clase que pide los parámetros necesarios
+     * Constructor de la clase que pide los parámetros necesarios.
+     * 
+     * @param valor_idDeposito : Un String del valor de la ID del deposito.
+     * @param valor_diametro : Un float del valor de la altura deposito.
+     * @param valor_altura : Un float del valor de la altura del deposito.
+     * 
      * */
     public Deposito (float valor_diametro, float valor_altura, String valor_idDeposito) {
         if (valor_diametro > 0 && valor_altura > 0) {            
@@ -45,7 +50,9 @@ public class Deposito {
             System.out.println ("Creado depósito con valores por defecto diametro 10 metros altura 5 metros id 000" );
         }   }
 
-    /*
+    /**
+     * Cambia los valores de los atributos del deposito.
+     * 
      * @param valor_idDeposito : Un String del valor de la ID del deposito.
      * @param valor_diametro : Un float del valor de la altura deposito.
      * @param valor_altura : Un float del valor de la altura del deposito.
@@ -66,25 +73,31 @@ public class Deposito {
     /**
      * 
      * @return Diametro
-     */
-    public float getDiametro () { return diametro; } 
+     **/
+    public float getDiametro () { 
+    	return diametro; 
+    } 
     
     /**
      * 
      * @return Altura
-     */
-    public float getAltura () { return altura; } 
+     **/
+    public float getAltura () {
+    	return altura; 
+    } 
     
     /**
      * 
      * @return IdDeposito
-     */
-    public String getIdDeposito () { return idDeposito; } 
+     **/
+    public String getIdDeposito () { 
+    	return idDeposito; 
+    } 
     
     /**
      * 
      * @return Capacidad
-     */
+     **/
     public float valorCapacidad () { 
         float capacidad;
         float pi = 3.1416f; 
