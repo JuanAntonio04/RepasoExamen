@@ -43,7 +43,7 @@ public class Deposito {
             altura = 5;
             idDeposito = "000";
             System.out.println ("Creado depósito con valores por defecto diametro 10 metros altura 5 metros id 000" );
-        }   } //Cierre del constructor
+        }   }
 
     /*
      * @param valor_idDeposito : Un String del valor de la ID del deposito.

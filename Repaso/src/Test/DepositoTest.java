@@ -13,17 +13,32 @@ public class DepositoTest {
 	@BeforeEach
 	public void CrearDeposito() {
 		
-		deposito1 = new Deposito(3234,2423,"dep1");
+		deposito1 = new Deposito(2,2,"dep1");
 		
 	}
 	
 	@Test
 	public void Test1() {
 		
-		assertEquals(2423, deposito1.getAltura());
-		assertEquals(3234, deposito1.getDiametro());
+		assertEquals(2, deposito1.getAltura());
+		assertEquals(2, deposito1.getDiametro());
 		assertEquals("dep1", deposito1.getIdDeposito());
 
+	}
+	
+	@Test
+	public void TestSets() {
+		
+		deposito1.setValoresDeposito("dep1.2", 2, 2);
+		deposito1.setValoresDeposito("", 3213, 4567);
+		
+	}
+	
+	@Test
+	public void TestValorCapacidad() {
+		
+		assertEquals(6.2832, deposito1.valorCapacidad());
+		
 	}
 	
 }
